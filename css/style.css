@@ -85,6 +85,46 @@
      cursor: pointer;
  }
 
+ .ham{
+    position: fixed;
+    right: 22px;
+    display: none;
+    cursor: pointer;
+ }
+.close{
+    position: fixed;
+    right: 22px;
+    display: none;
+    cursor: pointer;
+}
+.fixed{
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: 0.5s ease;
+}
+.add {
+         flex-direction: column;
+         height: auto;
+         padding: 10px;
+         position: relative;
+     }
+@media (max-width: 768px){
+    .navbar{
+        min-height: 2.2rem;
+        background-color: #fff;
+    }
+    .navbar .left,.navbar .mid,.navbar .right{
+        display: none;
+    }
+    .ham{
+        position: fixed;
+        right: 22px;
+        display: block;
+        cursor: pointer;
+     }
+    
+}
  /* Hero Section */
  .hero {
      width: 100%;
