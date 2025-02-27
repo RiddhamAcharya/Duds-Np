@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tp {
+    width: 100%;
+    height: 4rem;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+}
+
+.tp .left {
+    margin-left: 200px;
+    cursor: context-menu;
+}
+
+.tp .right {
+    margin-right: 200px;
+    cursor: pointer;
+}
+
+/* navbar  */
+.navbar {
+    background-color: rgb(216, 216, 216);
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+}
+.navbar .left{
+    margin-left:120px;
+    font-size: 30px;
+}
+.navbar .mid ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .mid ul li {
+    list-style: none;
+    padding: 0 15px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+}
+.navbar .mid ul li:hover{
+    border-bottom: 4px red solid;
+}
+.navbar .right{
+    margin-right: 150px;
+    cursor: pointer;
+}
+.navbar .right img{
+    height: 35px;
+}
+
+/* hero section  */
+.hero{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.hero .left{
+   width: 40%;
+   padding-top: 250px;
+} 
+.hero .left .redf{
+    font-size: 25px;
+    font-weight: 400;
+    color: red;
+    margin-left: 120px;
+    padding-top: 20px;
+}
+.hero .left .as{
+    font-size: 65px;
+    font-weight: 500;
+    margin-left: 120px;
+}
+.hero .left .btn{
+    margin-left: 120px;
+    font-size: 35px;
+    background-color: #000;
+    color: #fff;
+    margin-top: 20px;
+    padding:0 30px;
+    cursor: pointer;
+}
+.hero .right{
+    width: 50%;
+    background-color: transparent;
+    mix-blend-mode: screen;
+}
+.hero .right img{
+    padding-top: 150px;
+}
