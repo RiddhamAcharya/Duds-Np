@@ -33,3 +33,30 @@ close.addEventListener("click", function () {
     navbar.classList.remove('add');
     sections.forEach(section => section.style.display = "none");
 });
+
+ //Cart scroll
+window.addEventListener("scroll",function(){
+    let cr=document.querySelector('.cart');
+    if (window.scrollY > 50) {
+            cr.classList.add("sc");
+
+        } else {
+            cr.classList.remove("sc");
+
+        }
+})
+    let cr=document.querySelector('.cart');
+    let cl=document.querySelector('.cl');
+    let clic=document.querySelector(".crt");
+    let cloose = document.querySelector('cloose');
+
+
+clic.addEventListener("click",function(){
+    cr.classList.add('cartclick');
+});
+
+cl.addEventListener("click",function(){
+    cr.classList.remove("cartclick");
+});
+
+

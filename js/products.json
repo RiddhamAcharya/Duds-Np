@@ -1,0 +1,38 @@
+[
+	{
+		"id": 1,
+		"name":"Black Hoodie",
+		"price": "Rs. 4500",
+		"image": "images/hoodie.png"
+	},
+	{
+		"id": 2,
+		"name":" Plain Black Hoodie",
+		"price": "Rs. 3000",
+		"image": "images/hoodie2.png"
+	},
+	{
+		"id": 3,
+		"name":"Senior Polo SHoirt",
+		"price": "Rs. 4500",
+		"image": "images/Asset5nommasenior_large.webp"
+	},
+	{
+		"id": 4,
+		"name":"Men Black Tshirt",
+		"price": "Rs. 2300",
+		"image": "images/army_men_black_tshirt_white_print_spg_special_protection_group_1280x.jpg"
+	},
+	{
+		"id": 5,
+		"name":"Knitted Jumper",
+		"price": "Rs. 2700",
+		"image": "images/Knitted Jumper.webp"
+	},
+	{
+		"id": 6,
+		"name":"White Crop Top",
+		"price": "Rs. 4000",
+		"image": "images/white-crop-top.webp"
+	},
+]
