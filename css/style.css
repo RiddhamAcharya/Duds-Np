@@ -143,7 +143,7 @@
     top: 144px;
     bottom: 0;
     display: grid;
-    grid-template-rows: 70px 437px 70px;
+    grid-template-rows: 70px 380px 70px;
     z-index:1000;
     visibility: hidden;
 }
