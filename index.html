@@ -34,7 +34,7 @@
         </div>
         <div class="right">
             <img src="images/search_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Search">&emsp;
-            <img src="images/shopping_cart_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Cart" class="crt"><span>0</span>
+            <img src="images/shopping_cart_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="Cart" class="crt"><span id="cart-count">0</span>
         </div>
         <img src="images/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="ham">
         <img src="images/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="close">
@@ -45,7 +45,7 @@
         <div class="cartclose"><img src="images/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" class="cl"></div>
         <h2>Shopping Cart</h2>
         <div class="listcart">
-            <div class="item">
+            <!-- <div class="item">
                 <div class="image">
                     <img src="images/hoodie.png">
                 </div>
@@ -60,12 +60,12 @@
                     <span>1</span>
                     <span class="plus">></span>
                 </div>
-            </div>
+            </div> -->
         </div>
-
+ <h2>Total: Rs.<span id="total-price">0</span></h2>
         <div class="brn">
             <button class="cloose" >CLOSE</button>
-            <button class="CheckOut">CHECK OUT</button>
+            <button class="CheckOut" id="checkout">CHECK OUT</button>
         </div>
     </div>
     <!-- hero section  -->
@@ -117,8 +117,8 @@
     <!-- New Arrivals  -->
     <div class="nwarrival">
         <h2>NEW ARRIVAL</h2>
-        <div class="itm">
-            <div class="bx">
+        <div class="itm products">
+            <div class="bx product" data-id="1" data-name="Black Hoodie" data-price="4500">
                 <div class="ig">
                     <img src="images/hoodie.png">  
                 </div>
@@ -131,7 +131,7 @@
                 </div>
             </div>
             
-            <div class="bx">
+            <div class="bx product" data-id="2" data-name=" PlainBlack Hoodie" data-price="3000">
                 <div class="ig">
                     <img src="images/hoodie2.png">  
                 </div>
@@ -143,7 +143,7 @@
                 <button class="cartbutton">Add To cart</button>
                 </div>
             </div>
-            <div class="bx">
+            <div class="bx product" data-id="3" data-name="Senior Polo Sirt" data-price="4500">
                 <div class="ig">
                     <img src="images/Asset5nommasenior_large.webp">  
             </div>
@@ -155,7 +155,7 @@
                 <button class="cartbutton">Add To cart</button>
                 </div>
             </div>
-            <div class="bx">
+            <div class="bx product" data-id="4" data-name="Men Black T-shirt" data-price="2300">
                 <div class="ig">
                     <img src="images/army_men_black_tshirt_white_print_spg_special_protection_group_1280x.jpg">  
             </div>
@@ -167,7 +167,7 @@
                 <button class="cartbutton">Add To cart</button>
                 </div>
             </div>
-            <div class="bx">
+            <div class="bx product" data-id="5" data-name="Knitted Jumper" data-price="2700">
                 <div class="ig">
                     <img src="images/Knitted Jumper.webp">  
             </div>
@@ -179,7 +179,7 @@
                 <button class="cartbutton">Add To cart</button>
                 </div>
             </div>
-            <div class="bx">
+            <div class="bx product" data-id="6" data-name="White Crop Top" data-price="4000">
                 <div class="ig">
                     <img src="images/white-crop-top.webp">  
             </div>
@@ -208,7 +208,7 @@
 <div class="nwarrival">
         <h2>TOP PRODUCTS</h2><p>(UNISEX)</p>
         <div class="itm">
-            <div class="bx">
+            <div class="bx product" data-id="1" data-name="Black Hoodie" data-price="4500">
                 <div class="ig">
                     <img src="images/hoodie.png">  
             </div>
@@ -220,7 +220,7 @@
                 <button class="cartbutton">Add To cart</button>
                 </div>
             </div>
-            <div class="bx">
+            <div class="bx product" data-id="2" data-name="Plain Black Hoodie" data-price="3000">
                 <div class="ig">
                     <img src="images/hoodie2.png">  
             </div>
@@ -232,7 +232,7 @@
                 <button class="cartbutton">Add To cart</button>
                 </div>
             </div>
-            <div class="bx">
+            <div class="bx product" data-id="3" data-name="Senior Polo SHirt" data-price="4500">
                 <div class="ig">
                     <img src="images/Asset5nommasenior_large.webp">  
             </div>

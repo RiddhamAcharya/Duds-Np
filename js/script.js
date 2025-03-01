@@ -59,4 +59,40 @@ cl.addEventListener("click",function(){
     cr.classList.remove("cartclick");
 });
 
+// Home page Cart Menu editing
+
+document.addEventListener("DOMContentLoaded", function () {
+    
+    // localStorage.removeItem("cart");  
+    let cart = [];
+    updateCartCount();
+
+    document.querySelectorAll(".cartbutton").forEach(button => {
+        button.addEventListener("click", function () {
+            let product = this.parentElement;
+            let id = product.getAttribute("data-id");
+            let name = product.getAttribute("data-name");
+            let price = product.getAttribute("data-price");
+
+            let item = cart.find(p => p.id === id);
+            if (item) {
+                item.quantity += 1;
+            } else {
+                cart.push({ id, name, price, quantity: 1 });
+            }
+
+            localStorage.setItem("cart", JSON.stringify(cart));
+            updateCartCount();
+                console.log(cart);
+
+        });
+    });
+
+    function updateCartCount() {
+        let cartCountElement = document.getElementById("cart-count");
+        if (cartCountElement) {
+            cartCountElement.innerText = cart.reduce((total, item) => total + item.quantity, 0);
+        }
+    }
+});
 
